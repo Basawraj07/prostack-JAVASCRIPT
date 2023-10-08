@@ -1,8 +1,4 @@
-let sal = 25000;
-if (sal>40000){
-console.log('eligible for marriage');
 
-}else{
-
-console.log('not eligibe');
+for (var i=1; i<=5; i=i+1){
+    console.log(i)
 }
