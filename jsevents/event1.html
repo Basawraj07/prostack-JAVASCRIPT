@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENT</title>
 </head>
-<body>
-    <h1 style="text-align: center;">Javascript Events</h1>
+
+
+    <body>
+        <h1 style="text-align: center;">Javascript Events</h1>
     
     <div style="display: grid;grid-template-columns: 1fr 1fr 1fr;">
 <div>
@@ -37,34 +39,44 @@
               <p>click to change the input background color</p>
               <input id="button5" onfocus="change_color5()" style="background-color:red;">
             </div>
-            <div>
-            <h3>onblur:</h3>
+          <div>
+
+              <h3>onblur:</h3>
               <p>change lower case to uppercase onblur Events</p>
-                <input type="text" id="button6" onblur="change_text" style="background-color: white;">
+              <input type="text" id="button6" onblur="change_text()" >
             </div>
-    </div>
-</body>
-<script>
-    function change_color(){
+            
+        </div>
+    
+    </body>
+    <script>
+        function change_color(){
         document.getElementById("button1").style.backgroundColor="blue"
     }
+
 function change_color1(){
     document.getElementById("button2").style.backgroundColor="green"
 }
 
+
 function change_color3(){
     document.getElementById("button3").style.backgroundColor="black"
 }
+
 function change_color4(){
     document.getElementById("button4").style.backgroundColor="orange"
 }
+
 function change_color5(){
     document.getElementById("button5").style.backgroundColor="pink"
 }
+
 function change_text(){
-    let x =
-    document.getElementById("button6")
-    x.value = x.value.toUppercase();
+    //alert('test')
+    let name=document.getElementById('button6').value;
+    //alert(name)
+    //document.getElementById('blurEx').value="GM"
+    document.getElementById('button6').value=name.toUpperCase();
         }
 </script>
 </html>
