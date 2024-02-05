@@ -1,11 +1,8 @@
-let a= 100;
-let b = 40;
-if(a <b ){
+let a = 200;
+let b = 30000;
 
-console.log('a is least')
-
+if (a<b){
+    console.log(a+ " is least")
 }else{
-
-console.log('b is least')
-
+    console.log(b+ " is least")
 }

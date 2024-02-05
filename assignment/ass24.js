@@ -1,10 +1,6 @@
-let num= 100;
-if(num >= 100 && num<=999){
-
-console.log('3 digit number')
-
+let num = 3333;
+if(num>=100 && num<=999){
+    console.log(num+" is a 3 digit number")
 }else{
-
-console.log('not a 3digit number')
-
+    console.log(num+" is not a 3 digit number")
 }
